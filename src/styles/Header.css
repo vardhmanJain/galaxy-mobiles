@@ -40,7 +40,13 @@
 
 .banner{
     font-family: 'Lily Script One', cursive;
-    font-size: 9vh;
+    font-size: 5vh;
     color: #edf2f4;
     text-shadow: 1px 1px 2px #d90429, 2px 2px 6px #ef233c;
+}
+
+@media (min-width: 550px) {
+    .banner{
+        font-size: 9vh;
+    }
 }
