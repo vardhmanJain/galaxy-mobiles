@@ -110,6 +110,7 @@ form{
     right: 25%;
     top: 25%;
     bottom: 25%;
+    
     margin: auto;
     
 
@@ -146,10 +147,11 @@ background: linear-gradient(153deg, rgba(224,87,128,1) 0%, rgba(255,224,233,1) 4
 .meta{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: flex-start;
 }
 .meta > span{
     font-weight: 700;
+    margin-bottom: 4px;
 }
 .contact > a, .address{
     font-weight: 700;
@@ -159,6 +161,7 @@ background: linear-gradient(153deg, rgba(224,87,128,1) 0%, rgba(255,224,233,1) 4
 a{
     color: #522e38;
 }
+
 
 .meta{
     font-size: small;
