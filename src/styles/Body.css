@@ -52,7 +52,7 @@ ol, ul{
     align-items: center;
     justify-content: center;
     margin-bottom: 13px;
-    /* min-width: 40vw; */
+    
 }
 
 
@@ -62,7 +62,7 @@ input {
     border-style: none;
     outline: none;
     border-radius: inherit;
-    width: inherit;
+    
     
     
 }
@@ -76,7 +76,7 @@ form{
     flex-direction: row;
     align-items: center;
     background-color: white;
-    width: 52vw;
+    
     
 }
 
