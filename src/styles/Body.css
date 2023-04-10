@@ -26,7 +26,8 @@ ol, ul{
     border-radius: 10px;
     padding: 2vh;
     font-size: larger;
-    color: #ffffff
+    color: #ffffff;
+    box-shadow: 1px 1px 4px #8a2846;
 }
 
 
@@ -51,6 +52,7 @@ ol, ul{
     align-items: center;
     justify-content: center;
     margin-bottom: 13px;
+    /* min-width: 40vw; */
 }
 
 
@@ -60,6 +62,7 @@ input {
     border-style: none;
     outline: none;
     border-radius: inherit;
+    width: inherit;
     
     
 }
@@ -73,13 +76,93 @@ form{
     flex-direction: row;
     align-items: center;
     background-color: white;
+    width: 45vw;
     
 }
 
+/* .popup-container{
+    display: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.5);
+} */
 
+/* popup style */
+.popup-container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: rgba(0,0,0, 0.5);
+    color: #522e38;
+  }
+  .popup-inner {
+    position: absolute;
+    left: 25%;
+    right: 25%;
+    top: 25%;
+    bottom: 25%;
+    margin: auto;
+    
 
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+    background: rgb(224,87,128);
+background: linear-gradient(153deg, rgba(224,87,128,1) 0%, rgba(255,224,233,1) 48%, rgba(224,87,128,1) 100%);
+    border-radius: 10px 10px 10px 10px;
+  }
 
+  .button-container{
+    border-radius: 10px 10px 0 0;
+   
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .button-container > button{
+    margin-left: auto;
+    border: none;
+    background-color: inherit;
+  }
 
+.popup{
+    
+    padding: 2vw;
+    border-radius: 0 0 10px 10px;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    grid-row-gap: 1vh;
+}
+.meta{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.meta > span{
+    font-weight: 700;
+}
+.contact > a, .address{
+    font-weight: 700;
+    color: #522e38;
+}
+
+a{
+    color: #522e38;
+}
+
+.meta{
+    font-size: small;
+}
 @media (min-width: 550px) {
     .products{
         display: grid;
